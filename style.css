@@ -52,6 +52,7 @@ body
     width: 50%;
     border: none;
     z-index: 1;
+    background-color: white;
 }
 #run
 {
