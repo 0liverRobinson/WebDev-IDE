@@ -1,0 +1,76 @@
+body
+{    
+    font-family: Monospace;
+    overflow: hidden;
+    background-color: brown;
+}   
+#toolbar
+{
+    position: absolute;
+    background-color: brown;
+    width: 100%;
+    height: 2%;
+    left: 0%;
+    top: 0%;
+    margin: 0%;
+}
+#env
+{
+    position: absolute;
+    margin: 0;
+    background-color: #1f1c1c; 
+    color: whitesmoke;
+    resize: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    top: 2%;
+    left: 2%;
+    height: 98%;
+    width: 47%;
+    font-family: Monospace;
+}
+#lineCount
+{
+    position: absolute;
+    left: 0%;
+    top: 2%;
+    width: 2%;
+    height: 98%;
+    background-color: rgb(82, 24, 24);
+    text-align: right;
+    color: white;
+    overflow: auto;
+    overflow: hidden;
+}
+#mainArea
+{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    height: 98%;
+    width: 50%;
+    border: none;
+    z-index: 1;
+}
+#run
+{
+    position: absolute;
+    margin: 0;
+    left: 42%;
+    bottom: 0.1%;
+    opacity: 0.4;
+    background-color: brown;
+    z-index: 1;
+    width: 7%;
+    height: 4%;
+    border: none;
+    color: white;    
+}
+#run:hover
+{
+    opacity: 1;
+    background-color: brown;
+    z-index: 1;
+    cursor: pointer;
+}

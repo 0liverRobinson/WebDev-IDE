@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Editor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <noscript>Please Enable JavaScript to use the emulator.</noscript>
+        <div id="toolbar">
+        </div>
+        <div id="texteditor">
+            <div id="lineCount"> </div>
+            <textarea autofocus value="" id="env" spellcheck="false" onkeydown="syntaxHighlight(this, event)" onkeypress="syntaxHighlight(this, event), resetToggle()" onkeyup="syntaxHighlight(this, event), resetToggle()"
+                    onmousewheel="syntaxHighlight(this, event)" onmousedown="syntaxHighlight(this, event)" onmouseenter="syntaxHighlight(this, event)" onmouseleave="syntaxHighlight(this, event)" onscroll="syntaxHighlight(this, event)"></textarea>
+        </div>
+        <iframe id="mainArea" allowtransparency="true"> </iframe>
+        <button id="run" onclick="run(document.getElementById('env').value);">Go</button>
+        <script src="textEditor.js"></script>
+    </body>
+</html>
